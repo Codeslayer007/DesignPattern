@@ -23,6 +23,9 @@ public class UnitTest {
         Pizza cheesePizza = pizzaStore.getPizza("cheese");
         assertNotNull(cheesePizza);
         assertTrue(cheesePizza instanceof CheesePizza);
+        System.out.println("yesy");
+        cheesePizza.addIngredients();
+        cheesePizza.bake();
 
         // Test for veggie pizza
         Pizza veggiePizza = pizzaStore.getPizza("veggie");
